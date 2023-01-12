@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { AutoMyComponentComponent } from './components/auto-my-component/auto-my-component.component';
+import { CounterParentComponent } from './components/counter/counter-parent.component';
+import { MyCounterComponent } from './components/counter/counter.component';
 import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent.component';
 import { PeekABooComponent } from './components/peekapoo/peek-a-boo.component';
 import { SpyParentComponent } from './components/spy/spy.component';
@@ -18,7 +20,9 @@ import { SpyDirective } from './components/spy/spy.directive';
     PeekABooComponent,
     PeekABooParentComponent,
     SpyParentComponent,
-    SpyDirective 
+    SpyDirective,
+    CounterParentComponent,
+    MyCounterComponent 
   ],
   imports: [
     BrowserModule,
