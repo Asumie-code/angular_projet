@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AutoMyComponentComponent } from './components/auto-my-component/auto-my-component.component';
 import { CounterParentComponent } from './components/counter/counter-parent.component';
 import { MyCounterComponent } from './components/counter/counter.component';
+import { OnChangesParentComponent } from './components/on-changes/on-changes-parent.component';
+import { OnChangesComponent } from './components/on-changes/on-changes.component';
 import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent.component';
 import { PeekABooComponent } from './components/peekapoo/peek-a-boo.component';
 import { SpyParentComponent } from './components/spy/spy.component';
@@ -22,7 +24,9 @@ import { SpyDirective } from './components/spy/spy.directive';
     SpyParentComponent,
     SpyDirective,
     CounterParentComponent,
-    MyCounterComponent 
+    MyCounterComponent,
+    OnChangesComponent,
+    OnChangesParentComponent
   ],
   imports: [
     BrowserModule,
