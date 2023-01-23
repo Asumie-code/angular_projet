@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AfterViewParentComponent } from './components/after-view/after-view-parent.component';
+import { AfterViewComponent } from './components/after-view/after-view.component';
+import { ChildViewComponent } from './components/after-view/child-view.component';
 
 import { AutoMyComponentComponent } from './components/auto-my-component/auto-my-component.component';
 import { CounterParentComponent } from './components/counter/counter-parent.component';
@@ -26,7 +29,10 @@ import { SpyDirective } from './components/spy/spy.directive';
     CounterParentComponent,
     MyCounterComponent,
     OnChangesComponent,
-    OnChangesParentComponent
+    OnChangesParentComponent,
+    ChildViewComponent,
+    AfterViewComponent,
+    AfterViewParentComponent
   ],
   imports: [
     BrowserModule,
