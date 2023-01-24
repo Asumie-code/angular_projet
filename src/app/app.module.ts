@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AfterContentParentComponent } from './components/after-content/after-content-parent.component';
+import { AfterContentComponent } from './components/after-content/after-content.component';
+import { ChildComponent } from './components/after-content/child.component';
 import { AfterViewParentComponent } from './components/after-view/after-view-parent.component';
 import { AfterViewComponent } from './components/after-view/after-view.component';
 import { ChildViewComponent } from './components/after-view/child-view.component';
@@ -32,7 +35,10 @@ import { SpyDirective } from './components/spy/spy.directive';
     OnChangesParentComponent,
     ChildViewComponent,
     AfterViewComponent,
-    AfterViewParentComponent
+    AfterViewParentComponent,
+    AfterContentComponent,
+    AfterContentParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
