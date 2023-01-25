@@ -14,6 +14,8 @@ import { ChildViewComponent } from './components/after-view/child-view.component
 import { AutoMyComponentComponent } from './components/auto-my-component/auto-my-component.component';
 import { CounterParentComponent } from './components/counter/counter-parent.component';
 import { MyCounterComponent } from './components/counter/counter.component';
+import { DoCheckParentComponent } from './components/do-check/do-check-parent.component';
+import { DoCheckComponent } from './components/do-check/do-check.component';
 import { OnChangesParentComponent } from './components/on-changes/on-changes-parent.component';
 import { OnChangesComponent } from './components/on-changes/on-changes.component';
 import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent.component';
@@ -38,7 +40,9 @@ import { SpyDirective } from './components/spy/spy.directive';
     AfterViewParentComponent,
     AfterContentComponent,
     AfterContentParentComponent,
-    ChildComponent
+    ChildComponent,
+    DoCheckComponent,
+    DoCheckParentComponent
   ],
   imports: [
     BrowserModule,
