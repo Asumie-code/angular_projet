@@ -22,6 +22,9 @@ import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent
 import { PeekABooComponent } from './components/peekapoo/peek-a-boo.component';
 import { SpyParentComponent } from './components/spy/spy.component';
 import { SpyDirective } from './components/spy/spy.directive';
+import { EmulatedEncapsulationComponent } from './components/view-encapsulation/emulated-encapsulation.component';
+import { NoEncapsulationComponent } from './components/view-encapsulation/no-encapsulation.component';
+import { ShadowDomEncapsulationComponent } from './components/view-encapsulation/shadow-dom-encapsulation.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { SpyDirective } from './components/spy/spy.directive';
     AfterContentParentComponent,
     ChildComponent,
     DoCheckComponent,
-    DoCheckParentComponent
+    DoCheckParentComponent,
+    NoEncapsulationComponent,
+    EmulatedEncapsulationComponent,
+    ShadowDomEncapsulationComponent
   ],
   imports: [
     BrowserModule,
