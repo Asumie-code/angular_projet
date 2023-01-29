@@ -16,6 +16,8 @@ import { CounterParentComponent } from './components/counter/counter-parent.comp
 import { MyCounterComponent } from './components/counter/counter.component';
 import { DoCheckParentComponent } from './components/do-check/do-check-parent.component';
 import { DoCheckComponent } from './components/do-check/do-check.component';
+import { HeroChildComponent } from './components/hero/hero-child.component';
+import { HeroParentComponent } from './components/hero/hero-parent.component';
 import { OnChangesParentComponent } from './components/on-changes/on-changes-parent.component';
 import { OnChangesComponent } from './components/on-changes/on-changes.component';
 import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent.component';
@@ -48,7 +50,9 @@ import { ShadowDomEncapsulationComponent } from './components/view-encapsulation
     DoCheckParentComponent,
     NoEncapsulationComponent,
     EmulatedEncapsulationComponent,
-    ShadowDomEncapsulationComponent
+    ShadowDomEncapsulationComponent,
+    HeroChildComponent, 
+    HeroParentComponent
   ],
   imports: [
     BrowserModule,
