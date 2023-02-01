@@ -31,6 +31,8 @@ import { VersionParentComponet } from './components/version/version-parent.compo
 import { EmulatedEncapsulationComponent } from './components/view-encapsulation/emulated-encapsulation.component';
 import { NoEncapsulationComponent } from './components/view-encapsulation/no-encapsulation.component';
 import { ShadowDomEncapsulationComponent } from './components/view-encapsulation/shadow-dom-encapsulation.component';
+import { VoterComponent } from './components/voter/voter.component';
+import { VoteTakerComponent } from './components/voter/votetaker.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { ShadowDomEncapsulationComponent } from './components/view-encapsulation
     NameChildComponent, 
     NameparentComponent, 
     VersionChildComponent, 
-    VersionParentComponet
+    VersionParentComponet,
+    VoteTakerComponent, 
+    VoterComponent
   ],
   imports: [
     BrowserModule,
