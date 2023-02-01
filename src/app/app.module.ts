@@ -26,6 +26,8 @@ import { PeekABooParentComponent } from './components/peekapoo/peek-a-boo-parent
 import { PeekABooComponent } from './components/peekapoo/peek-a-boo.component';
 import { SpyParentComponent } from './components/spy/spy.component';
 import { SpyDirective } from './components/spy/spy.directive';
+import { VersionChildComponent } from './components/version/version-child.component';
+import { VersionParentComponet } from './components/version/version-parent.component';
 import { EmulatedEncapsulationComponent } from './components/view-encapsulation/emulated-encapsulation.component';
 import { NoEncapsulationComponent } from './components/view-encapsulation/no-encapsulation.component';
 import { ShadowDomEncapsulationComponent } from './components/view-encapsulation/shadow-dom-encapsulation.component';
@@ -56,7 +58,9 @@ import { ShadowDomEncapsulationComponent } from './components/view-encapsulation
     HeroChildComponent, 
     HeroParentComponent, 
     NameChildComponent, 
-    NameparentComponent
+    NameparentComponent, 
+    VersionChildComponent, 
+    VersionParentComponet
   ],
   imports: [
     BrowserModule,
