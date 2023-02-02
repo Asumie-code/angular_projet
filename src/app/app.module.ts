@@ -12,6 +12,8 @@ import { AfterViewComponent } from './components/after-view/after-view.component
 import { ChildViewComponent } from './components/after-view/child-view.component';
 
 import { AutoMyComponentComponent } from './components/auto-my-component/auto-my-component.component';
+import { CountdownLocalVarParentComponent } from './components/countdown-timer/countdown-parent.component';
+import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CounterParentComponent } from './components/counter/counter-parent.component';
 import { MyCounterComponent } from './components/counter/counter.component';
 import { DoCheckParentComponent } from './components/do-check/do-check-parent.component';
@@ -64,7 +66,9 @@ import { VoteTakerComponent } from './components/voter/votetaker.component';
     VersionChildComponent, 
     VersionParentComponet,
     VoteTakerComponent, 
-    VoterComponent
+    VoterComponent,
+    CountdownTimerComponent, 
+    CountdownLocalVarParentComponent
   ],
   imports: [
     BrowserModule,
