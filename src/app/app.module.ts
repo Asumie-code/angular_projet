@@ -20,6 +20,8 @@ import { DoCheckParentComponent } from './components/do-check/do-check-parent.co
 import { DoCheckComponent } from './components/do-check/do-check.component';
 import { HeroChildComponent } from './components/hero/hero-child.component';
 import { HeroParentComponent } from './components/hero/hero-parent.component';
+import { AstronautComponent } from './components/mission/astronaut.component';
+import { MissionControlComponent } from './components/mission/missioncontrol.component';
 import { NameChildComponent } from './components/name/name-child.component';
 import { NameparentComponent } from './components/name/name-parent.component';
 import { OnChangesParentComponent } from './components/on-changes/on-changes-parent.component';
@@ -69,7 +71,9 @@ import { VoteTakerComponent } from './components/voter/votetaker.component';
     VoterComponent,
     CountdownTimerComponent, 
     CountdownLocalVarParentComponent,
-    CountdownViewChildParentComponent
+    CountdownViewChildParentComponent,
+    MissionControlComponent, 
+    AstronautComponent
   ],
   imports: [
     BrowserModule,
