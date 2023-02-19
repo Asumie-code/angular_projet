@@ -1,5 +1,7 @@
 export class Hero {
-    constructor(public name: string) { }
+    active?  =  false 
+
+    constructor(public name: string, public team?: string[]) { } 
   }
 
 
