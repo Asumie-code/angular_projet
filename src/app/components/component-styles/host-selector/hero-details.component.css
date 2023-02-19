@@ -1,0 +1,28 @@
+@import './hero-details-box.css';
+
+
+:host {
+    font-style: italic;
+
+}
+
+:host {
+    font-style: italic;
+   
+
+}
+
+
+:host(.active) {
+    font-weight: bold;
+
+}
+
+:host-context(.active) {
+    font-style: italic;
+}
+
+
+:host ::ng-deep h3 {
+    font-style: italic;
+}

@@ -37,6 +37,13 @@ import { NoEncapsulationComponent } from './components/component-interaction/vie
 import { ShadowDomEncapsulationComponent } from './components/component-interaction/view-encapsulation/shadow-dom-encapsulation.component';
 import { VoterComponent } from './components/component-interaction/voter/voter.component';
 import { VoteTakerComponent } from './components/component-interaction/voter/votetaker.component';
+import { HeroAppComponent } from './components/component-styles/host-selector/hero-app.component';
+import { HeroAppMainComponent } from './components/component-styles/host-selector/hero-app-main.component';
+import { QuestSummaryComponent } from './components/component-styles/host-selector/quest-summary.component';
+import { HeroTeamComponent } from './components/component-styles/host-selector/hero-team.component';
+import { HeroDetailsComponent } from './components/component-styles/host-selector/hero-details.component';
+import { HeroControlsComponent } from './components/component-styles/host-selector/hero-controls.component';
+import { HostSelectorExampleComponent } from './components/component-styles/host-selector/host-selector-example.component';
 
 @NgModule({
   declarations: [
@@ -61,26 +68,33 @@ import { VoteTakerComponent } from './components/component-interaction/voter/vot
     NoEncapsulationComponent,
     EmulatedEncapsulationComponent,
     ShadowDomEncapsulationComponent,
-    HeroChildComponent, 
-    HeroParentComponent, 
-    NameChildComponent, 
-    NameparentComponent, 
-    VersionChildComponent, 
+    HeroChildComponent,
+    HeroParentComponent,
+    NameChildComponent,
+    NameparentComponent,
+    VersionChildComponent,
     VersionParentComponet,
-    VoteTakerComponent, 
+    VoteTakerComponent,
     VoterComponent,
-    CountdownTimerComponent, 
+    CountdownTimerComponent,
     CountdownLocalVarParentComponent,
     CountdownViewChildParentComponent,
-    MissionControlComponent, 
-    AstronautComponent
+    MissionControlComponent,
+    AstronautComponent,
+    HeroAppComponent,
+    HeroAppMainComponent,
+    QuestSummaryComponent,
+    HeroTeamComponent,
+    HeroDetailsComponent,
+    HeroControlsComponent,
+    HostSelectorExampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // need this module to use [(ngModel)] directive
+    FormsModule, // need this module to use [(ngModel)] directive
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
