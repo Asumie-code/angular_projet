@@ -44,6 +44,7 @@ import { HeroTeamComponent } from './components/component-styles/host-selector/h
 import { HeroDetailsComponent } from './components/component-styles/host-selector/hero-details.component';
 import { HeroControlsComponent } from './components/component-styles/host-selector/hero-controls.component';
 import { HostSelectorExampleComponent } from './components/component-styles/host-selector/host-selector-example.component';
+import { ItemDetailComponent } from './components/component-sharing-data/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { HostSelectorExampleComponent } from './components/component-styles/host
     HeroTeamComponent,
     HeroDetailsComponent,
     HeroControlsComponent,
-    HostSelectorExampleComponent
+    HostSelectorExampleComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
