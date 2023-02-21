@@ -45,6 +45,10 @@ import { HeroDetailsComponent } from './components/component-styles/host-selecto
 import { HeroControlsComponent } from './components/component-styles/host-selector/hero-controls.component';
 import { HostSelectorExampleComponent } from './components/component-styles/host-selector/host-selector-example.component';
 import { ItemDetailComponent } from './components/component-sharing-data/item-detail/item-detail.component';
+import { ItemOutputComponent } from './components/component-sharing-data/item-output/item-output.component';
+import { InputOutputComponent } from './components/component-sharing-data/input-output/input-output.component';
+import { AliasingComponent } from './components/component-sharing-data/aliasing/aliasing.component';
+import { InTheMetadataComponent } from './components/component-sharing-data/in-the-metadata/in-the-metadata.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +93,11 @@ import { ItemDetailComponent } from './components/component-sharing-data/item-de
     HeroDetailsComponent,
     HeroControlsComponent,
     HostSelectorExampleComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    ItemOutputComponent,
+    InputOutputComponent,
+    AliasingComponent,
+    InTheMetadataComponent
   ],
   imports: [
     BrowserModule,
