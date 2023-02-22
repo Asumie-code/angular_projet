@@ -49,6 +49,10 @@ import { ItemOutputComponent } from './components/component-sharing-data/item-ou
 import { InputOutputComponent } from './components/component-sharing-data/input-output/input-output.component';
 import { AliasingComponent } from './components/component-sharing-data/aliasing/aliasing.component';
 import { InTheMetadataComponent } from './components/component-sharing-data/in-the-metadata/in-the-metadata.component';
+import { ZippyBasicComponent } from './components/component-content-projection/zippy-basic/zippy-basic.component';
+import { ZippyMultislotComponent } from './components/component-content-projection/zippy-multislot/zippy-multislot.component';
+import { ZippyComponent, ZippyContentDirective, ZippyToggleDirective } from './components/component-content-projection/example-zippy/example-zippy.component';
+import { ZippyNgprojectasComponent } from './components/component-content-projection/zippy-ngprojectas/zippy-ngprojectas.component';
 
 @NgModule({
   declarations: [
@@ -97,7 +101,13 @@ import { InTheMetadataComponent } from './components/component-sharing-data/in-t
     ItemOutputComponent,
     InputOutputComponent,
     AliasingComponent,
-    InTheMetadataComponent
+    InTheMetadataComponent,
+    ZippyBasicComponent, 
+    ZippyMultislotComponent,
+    ZippyComponent, 
+    ZippyContentDirective,
+    ZippyToggleDirective,
+    ZippyNgprojectasComponent
   ],
   imports: [
     BrowserModule,

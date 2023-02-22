@@ -120,7 +120,7 @@
 
 <!-- sharing data -->
 
-
+<!-- 
 <h1>Inputs and Outputs</h1>
 
 <app-item-detail [item]="currentItem"></app-item-detail>
@@ -179,3 +179,54 @@
 <ul>
   <li *ngFor="let wish of wishList">{{wish}}</li>
 </ul>
+ -->
+
+
+
+<!-- sharing data -->
+
+
+
+
+<!-- content projection -->
+
+
+<h2>Angular and Content Projection</h2>
+
+
+<app-zippy-basic>
+    <p>Is content projection cool? </p>
+</app-zippy-basic>
+
+<hr >
+
+<app-zippy-multislot>
+     <p question>
+        Is content projection cool? 
+     </p>
+     <p>Let's learn about content projections!</p>
+</app-zippy-multislot>
+
+<hr>
+
+<h2>Here's a zippy</h2>
+
+<app-example-zippy>
+  <button type="button" appExampleZippyToggle>Is content project cool?</button>
+  <ng-template appExampleZippyContent>
+      It depends on what you do with it. 
+  </ng-template>
+</app-example-zippy>
+
+<hr>
+
+
+<app-zippy-ngprojectas>
+  <p>Let's learn about content projection!</p>
+  <ng-container ngProjectAs="[question]">
+    <p>Is content projection cool?</p>
+  </ng-container>
+</app-zippy-ngprojectas>
+
+
+<!-- content projection -->
