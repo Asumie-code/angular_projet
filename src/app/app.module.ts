@@ -53,6 +53,11 @@ import { ZippyBasicComponent } from './components/component-content-projection/z
 import { ZippyMultislotComponent } from './components/component-content-projection/zippy-multislot/zippy-multislot.component';
 import { ZippyComponent, ZippyContentDirective, ZippyToggleDirective } from './components/component-content-projection/example-zippy/example-zippy.component';
 import { ZippyNgprojectasComponent } from './components/component-content-projection/zippy-ngprojectas/zippy-ngprojectas.component';
+import { AdBannerComponent } from './components/component-dynamic-component/ad-banner.component';
+import { AdDirective } from './components/component-dynamic-component/ad.directive';
+import { HeroJobAdComponent } from './components/component-dynamic-component/hero-job-ad.component';
+import { HeroProfileComponent } from './components/component-dynamic-component/hero-profile.component';
+import { AdService } from './services/ad.service';
 
 @NgModule({
   declarations: [
@@ -107,14 +112,18 @@ import { ZippyNgprojectasComponent } from './components/component-content-projec
     ZippyComponent, 
     ZippyContentDirective,
     ZippyToggleDirective,
-    ZippyNgprojectasComponent
+    ZippyNgprojectasComponent,
+    AdBannerComponent, 
+    AdDirective, 
+    HeroJobAdComponent,
+    HeroProfileComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, // need this module to use [(ngModel)] directive
   ],
-  providers: [],
+  providers: [AdService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
