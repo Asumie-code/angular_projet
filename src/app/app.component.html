@@ -235,6 +235,15 @@
 
 <!-- dynamic component -->
 
-<div>
+<!-- <div>
   <app-ad-banner [ads]="ads"></app-ad-banner>
-</div>
+</div> -->
+
+
+<!-- dynamic component -->
+
+<!-- angular elements -->
+
+<input #input value="Message">
+<button type="button" (click)="popup.showAsComponent(input.value)">Show as component</button>
+<button type="button" (click)="popup.showAsElement(input.value)">Show as Element</button>

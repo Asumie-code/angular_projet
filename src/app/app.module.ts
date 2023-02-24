@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -58,6 +59,8 @@ import { AdDirective } from './components/component-dynamic-component/ad.directi
 import { HeroJobAdComponent } from './components/component-dynamic-component/hero-job-ad.component';
 import { HeroProfileComponent } from './components/component-dynamic-component/hero-profile.component';
 import { AdService } from './services/ad.service';
+import { PopupComponent } from './components/component-angular-elements/popup.component';
+import { PopupService } from './services/popup.service';
 
 @NgModule({
   declarations: [
@@ -116,14 +119,19 @@ import { AdService } from './services/ad.service';
     AdBannerComponent, 
     AdDirective, 
     HeroJobAdComponent,
-    HeroProfileComponent 
+    HeroProfileComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule, // need this module to use [(ngModel)] directive
   ],
-  providers: [AdService],
+  providers: [
+    AdService,
+    PopupService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

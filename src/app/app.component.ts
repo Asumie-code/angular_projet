@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injector, OnInit } from '@angular/core';
 import { AdItem } from './components/component-dynamic-component/ad-item';
 import { AdService } from './services/ad.service';
+import { PopupService } from './services/popup.service';
+import { PopupComponent } from './components/component-angular-elements/popup.component';
+import { createCustomElement } from '@angular/elements';
+
 
 @Component({
   selector: 'app-root',
@@ -15,7 +19,13 @@ export class AppComponent implements OnInit{
   wishList = ['Drone', 'computer']
   ads: AdItem[] = []
 
-  constructor(private adService: AdService) {}
+  constructor(private adService: AdService, injector: Injector, public popup: PopupService) {
+     // convert 'PopupComponent' to a custom element 
+     const PopupElement = createCustomElement(PopupComponent, {injector})
+
+     // Register the custom element with the browser 
+     customElements.define('popup-element', PopupElement)
+  }
 
   ngOnInit(): void {
      this.ads = this.adService.getAds()
