@@ -61,6 +61,10 @@ import { HeroProfileComponent } from './components/component-dynamic-component/h
 import { AdService } from './services/ad.service';
 import { PopupComponent } from './components/component-angular-elements/popup.component';
 import { PopupService } from './services/popup.service';
+import { CompWithHostBindingComponent } from './components/template-attribute-binding/comp-with-host-binding.component';
+import { MyInputWithAttributeDecoratorComponent } from './components/template-attribute-binding/my-input-wiht-attribute-decorator.component';
+import { NavBarComponent } from './components/template-attribute-binding/single-and-multiple-style-binding.component';
+import { TemplateAttributeBindingComponent } from './components/template-attribute-binding/template-attribute-binding.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +124,11 @@ import { PopupService } from './services/popup.service';
     AdDirective, 
     HeroJobAdComponent,
     HeroProfileComponent,
-    PopupComponent
+    PopupComponent,
+    CompWithHostBindingComponent, 
+    MyInputWithAttributeDecoratorComponent,
+    NavBarComponent,
+    TemplateAttributeBindingComponent
   ],
   imports: [
     BrowserModule,

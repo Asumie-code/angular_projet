@@ -12,6 +12,9 @@ import { createCustomElement } from '@angular/elements';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+
+
+
   title = 'my-app';
   currentItem = 'Television'
   lastChanceItem = 'Beanbag'
