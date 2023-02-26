@@ -65,6 +65,9 @@ import { CompWithHostBindingComponent } from './components/template-attribute-bi
 import { MyInputWithAttributeDecoratorComponent } from './components/template-attribute-binding/my-input-wiht-attribute-decorator.component';
 import { NavBarComponent } from './components/template-attribute-binding/single-and-multiple-style-binding.component';
 import { TemplateAttributeBindingComponent } from './components/template-attribute-binding/template-attribute-binding.component';
+import { TemplateEventBindingComponent } from './components/template-event-binding/event-binding.component';
+import { ClickDirective } from './components/template-event-binding/click.directive';
+import { TemplateItemDetailComponent } from './components/template-event-binding/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -128,7 +131,10 @@ import { TemplateAttributeBindingComponent } from './components/template-attribu
     CompWithHostBindingComponent, 
     MyInputWithAttributeDecoratorComponent,
     NavBarComponent,
-    TemplateAttributeBindingComponent
+    TemplateAttributeBindingComponent,
+    TemplateEventBindingComponent, 
+    ClickDirective,
+    TemplateItemDetailComponent
   ],
   imports: [
     BrowserModule,
