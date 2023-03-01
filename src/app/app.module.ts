@@ -68,6 +68,8 @@ import { TemplateAttributeBindingComponent } from './components/template-attribu
 import { TemplateEventBindingComponent } from './components/template-event-binding/event-binding.component';
 import { ClickDirective } from './components/template-event-binding/click.directive';
 import { TemplateItemDetailComponent } from './components/template-event-binding/item-detail/item-detail.component';
+import { SizerComponent } from './components/template-two-way-binding/sizer/szier.component';
+import { TemplateTwoWayBinding } from './components/template-two-way-binding/template-two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -134,7 +136,9 @@ import { TemplateItemDetailComponent } from './components/template-event-binding
     TemplateAttributeBindingComponent,
     TemplateEventBindingComponent, 
     ClickDirective,
-    TemplateItemDetailComponent
+    TemplateItemDetailComponent,
+    SizerComponent,
+    TemplateTwoWayBinding
   ],
   imports: [
     BrowserModule,
