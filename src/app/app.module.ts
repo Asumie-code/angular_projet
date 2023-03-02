@@ -70,6 +70,19 @@ import { ClickDirective } from './components/template-event-binding/click.direct
 import { TemplateItemDetailComponent } from './components/template-event-binding/item-detail/item-detail.component';
 import { SizerComponent } from './components/template-two-way-binding/sizer/szier.component';
 import { TemplateTwoWayBinding } from './components/template-two-way-binding/template-two-way-binding.component';
+import { HeroBirthdayComponent } from './components/template-pipes/hero-birthday1.component';
+import { HeroBirthday2Component } from './components/template-pipes/hero-birthday2.component';
+import { PowerBoosterComponent } from './components/template-pipes/power-booster.component';
+import { ExponentialStrengthPipe } from './components/template-pipes/exponential-strength.pipe';
+import { PowerBoostCalculatorComponent } from './components/template-pipes/power-boost-calculator.component';
+import { FlyingHeroesComponent, FlyingHeroesImpureComponent } from './components/template-pipes/flying-heroes.component';
+import { FlyingHeroesImpurePipe, FlyingHeroesPipe } from './components/template-pipes/flying-heroes.pipe';
+import { PrecedenceComponent } from './components/template-pipes/precedence.component';
+import { HeroAsyncMessageComponent } from './components/template-pipes/hero-async-message.component';
+import { HeroListComponent } from './components/template-pipes/hero-list.component';
+import { FetchJsonPipe } from './components/template-pipes/fetch-json.pipe';
+import { TemplatePipesComponent } from './components/template-pipes/template-pipes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -138,13 +151,28 @@ import { TemplateTwoWayBinding } from './components/template-two-way-binding/tem
     ClickDirective,
     TemplateItemDetailComponent,
     SizerComponent,
-    TemplateTwoWayBinding
+    TemplateTwoWayBinding,
+    HeroBirthdayComponent,
+    HeroBirthday2Component,
+    PowerBoosterComponent, 
+    ExponentialStrengthPipe, 
+    PowerBoostCalculatorComponent,
+    FlyingHeroesComponent, 
+    FlyingHeroesImpureComponent,
+    FlyingHeroesImpurePipe, 
+    FlyingHeroesPipe,
+    PrecedenceComponent,
+    HeroAsyncMessageComponent,
+    HeroListComponent, 
+    FetchJsonPipe,
+    TemplatePipesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule, // need this module to use [(ngModel)] directive
+    FormsModule, // need this module to use [(ngModel)] directive,
+    HttpClientModule
   ],
   providers: [
     AdService,
