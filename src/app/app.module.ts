@@ -83,6 +83,7 @@ import { HeroListComponent } from './components/template-pipes/hero-list.compone
 import { FetchJsonPipe } from './components/template-pipes/fetch-json.pipe';
 import { TemplatePipesComponent } from './components/template-pipes/template-pipes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplateVariables } from './components/template-variables/template-variables.component';
 
 @NgModule({
   declarations: [
@@ -165,7 +166,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeroAsyncMessageComponent,
     HeroListComponent, 
     FetchJsonPipe,
-    TemplatePipesComponent
+    TemplatePipesComponent,
+    TemplateVariables
   ],
   imports: [
     BrowserModule,
