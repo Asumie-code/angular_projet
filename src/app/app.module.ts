@@ -84,6 +84,9 @@ import { FetchJsonPipe } from './components/template-pipes/fetch-json.pipe';
 import { TemplatePipesComponent } from './components/template-pipes/template-pipes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TemplateVariables } from './components/template-variables/template-variables.component';
+import { BuiltInDirective } from './components/directives/built-in-directive/built-in-directive.component';
+import { DirectiveItemDetailComponent } from './components/directives/built-in-directive/item-detail/directive-item-detail.component';
+import { ItemSwitchComponents } from './components/directives/built-in-directive/directive-item-switch.component';
 
 @NgModule({
   declarations: [
@@ -167,7 +170,10 @@ import { TemplateVariables } from './components/template-variables/template-vari
     HeroListComponent, 
     FetchJsonPipe,
     TemplatePipesComponent,
-    TemplateVariables
+    TemplateVariables,
+    BuiltInDirective,
+    DirectiveItemDetailComponent,
+    ItemSwitchComponents
   ],
   imports: [
     BrowserModule,
