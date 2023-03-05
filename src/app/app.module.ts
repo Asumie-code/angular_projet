@@ -87,6 +87,9 @@ import { TemplateVariables } from './components/template-variables/template-vari
 import { BuiltInDirective } from './components/directives/built-in-directive/built-in-directive.component';
 import { DirectiveItemDetailComponent } from './components/directives/built-in-directive/item-detail/directive-item-detail.component';
 import { ItemSwitchComponents } from './components/directives/built-in-directive/directive-item-switch.component';
+import { DirectiveAttributeComponent } from './components/directives-attribute-directives/directive-attribute.component';
+import { HighlightDirective } from './components/directives-attribute-directives/highlight.directive';
+
 
 @NgModule({
   declarations: [
@@ -173,7 +176,10 @@ import { ItemSwitchComponents } from './components/directives/built-in-directive
     TemplateVariables,
     BuiltInDirective,
     DirectiveItemDetailComponent,
-    ItemSwitchComponents
+    ItemSwitchComponents,
+    DirectiveAttributeComponent, 
+    HighlightDirective
+    
   ],
   imports: [
     BrowserModule,
