@@ -1,0 +1,69 @@
+<h1>Structural Directives</h1>
+
+<p>Conditional display of hero</p>
+
+<blockquote>
+    <div *ngIf="hero" class="name">{{hero!.name}}</div>
+</blockquote> 
+
+<p>List of heroes</p>
+
+<ul>
+    <li  *ngFor="let hero of heroes" >{{hero!.name}}</li>
+</ul>
+
+<hr>
+
+<h2 id="ngIF">NgIf</h2>
+
+<p *ngIf="true">
+    Express is true and ngIf is true. 
+    this paragraph is in the DOM.
+</p>
+
+<p *ngIf="false">
+    Expression is false and ngIf is false. 
+    this paragraph is not in the DOM.
+</p>
+
+<p [style.display]="'block'">
+    Expression sets to "block". 
+    this paragraph is visible.
+</p>
+
+<p [style.display]="'none'">
+    Expression sets to "none". 
+    this paragraph is hidden but still in the DOM.
+</p>
+
+<h4>NgIf with template</h4>
+<p>&lt;ng-template&gt; element</p>
+<ng-template [ngIf]="hero">
+        <div class="name">{{hero!.name}}</div>
+</ng-template>
+
+<hr>
+
+<h2 id="ng-container">&lt;ng-container&gt;</h2>
+
+<h4>*ngIf with a &lt;ng-container&gt;</h4>
+
+<button (click)="hero = hero ? null : heroes[0]">Toggle hero</button>
+
+<p>
+    I turned the corner
+    <ng-container *ngIf="hero">
+        and saw {{hero!.name}}. I waved
+    </ng-container>
+    and continued on my way.
+</p>
+
+<p>
+    I turned the corner
+    <span *ngIf="hero">
+        and saw {{hero!.name}}. I waved
+    </span>
+    and continued on my way.
+</p>
+
+<p><i>&lt;select&gt; with  &lt;span&gt;</i></p>

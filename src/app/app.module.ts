@@ -89,6 +89,7 @@ import { DirectiveItemDetailComponent } from './components/directives/built-in-d
 import { ItemSwitchComponents } from './components/directives/built-in-directive/directive-item-switch.component';
 import { DirectiveAttributeComponent } from './components/directives-attribute-directives/directive-attribute.component';
 import { HighlightDirective } from './components/directives-attribute-directives/highlight.directive';
+import { StructuralDirective } from './components/directives-structural-directives/structural-directives.component';
 
 
 @NgModule({
@@ -178,7 +179,8 @@ import { HighlightDirective } from './components/directives-attribute-directives
     DirectiveItemDetailComponent,
     ItemSwitchComponents,
     DirectiveAttributeComponent, 
-    HighlightDirective
+    HighlightDirective,
+    StructuralDirective
     
   ],
   imports: [
