@@ -12,4 +12,9 @@ import { Hero, heroes } from "./hero";
 export class StructuralDirective {
     heroes = heroes
     hero: Hero | null = this.heroes[0]
+    showSad = true
+
+
+
+    trackById(index: number, hero: Hero): number { return hero.id}
 }

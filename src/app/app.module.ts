@@ -90,6 +90,7 @@ import { ItemSwitchComponents } from './components/directives/built-in-directive
 import { DirectiveAttributeComponent } from './components/directives-attribute-directives/directive-attribute.component';
 import { HighlightDirective } from './components/directives-attribute-directives/highlight.directive';
 import { StructuralDirective } from './components/directives-structural-directives/structural-directives.component';
+import { heroSwitchComponents } from './components/directives-structural-directives/hero-swiitch.component';
 
 
 @NgModule({
@@ -180,7 +181,8 @@ import { StructuralDirective } from './components/directives-structural-directiv
     ItemSwitchComponents,
     DirectiveAttributeComponent, 
     HighlightDirective,
-    StructuralDirective
+    StructuralDirective,
+    heroSwitchComponents
     
   ],
   imports: [
