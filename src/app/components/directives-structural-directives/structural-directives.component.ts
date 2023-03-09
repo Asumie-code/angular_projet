@@ -13,6 +13,7 @@ export class StructuralDirective {
     heroes = heroes
     hero: Hero | null = this.heroes[0]
     showSad = true
+    condition = false
 
 
 

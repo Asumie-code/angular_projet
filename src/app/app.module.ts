@@ -91,6 +91,7 @@ import { DirectiveAttributeComponent } from './components/directives-attribute-d
 import { HighlightDirective } from './components/directives-attribute-directives/highlight.directive';
 import { StructuralDirective } from './components/directives-structural-directives/structural-directives.component';
 import { heroSwitchComponents } from './components/directives-structural-directives/hero-swiitch.component';
+import { UnlessDirective } from './components/directives-structural-directives/unless.directive';
 
 
 @NgModule({
@@ -182,7 +183,8 @@ import { heroSwitchComponents } from './components/directives-structural-directi
     DirectiveAttributeComponent, 
     HighlightDirective,
     StructuralDirective,
-    heroSwitchComponents
+    heroSwitchComponents,
+    UnlessDirective
     
   ],
   imports: [
