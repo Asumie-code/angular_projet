@@ -94,6 +94,7 @@ import { heroSwitchComponents } from './components/directives-structural-directi
 import { UnlessDirective } from './components/directives-structural-directives/unless.directive';
 import { IfLoadedDirective } from './components/directives-structural-directives/if-loaded.directive';
 import { StructDirHero } from './components/directives-structural-directives/hero.component';
+import { TrigonometryDirective } from './components/directives-structural-directives/trigonometry.directive';
 
 
 @NgModule({
@@ -188,7 +189,8 @@ import { StructDirHero } from './components/directives-structural-directives/her
     heroSwitchComponents,
     UnlessDirective,
     IfLoadedDirective,
-    StructDirHero
+    StructDirHero,
+    TrigonometryDirective
     
   ],
   imports: [
