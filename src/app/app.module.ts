@@ -95,6 +95,8 @@ import { UnlessDirective } from './components/directives-structural-directives/u
 import { IfLoadedDirective } from './components/directives-structural-directives/if-loaded.directive';
 import { StructDirHero } from './components/directives-structural-directives/hero.component';
 import { TrigonometryDirective } from './components/directives-structural-directives/trigonometry.directive';
+import { DependencyInjectionComponent } from './components/dependency-injection/dependency-injection.component';
+import { CarComponent } from './components/dependency-injection/car/car.component';
 
 
 @NgModule({
@@ -190,7 +192,9 @@ import { TrigonometryDirective } from './components/directives-structural-direct
     UnlessDirective,
     IfLoadedDirective,
     StructDirHero,
-    TrigonometryDirective
+    TrigonometryDirective,
+    DependencyInjectionComponent,
+    CarComponent
     
   ],
   imports: [
