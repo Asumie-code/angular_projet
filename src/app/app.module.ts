@@ -97,6 +97,9 @@ import { StructDirHero } from './components/directives-structural-directives/her
 import { TrigonometryDirective } from './components/directives-structural-directives/trigonometry.directive';
 import { DependencyInjectionComponent } from './components/dependency-injection/dependency-injection.component';
 import { CarComponent } from './components/dependency-injection/car/car.component';
+import { DiHeroListComponent } from './components/dependency-injection/heroes/hero-list.compnent';
+import { DiHeroesComponent } from './components/dependency-injection/heroes/heroes.component';
+import { DiHeroesTspComponent } from './components/dependency-injection/heroes/heroes-tsp.component';
 
 
 @NgModule({
@@ -194,7 +197,10 @@ import { CarComponent } from './components/dependency-injection/car/car.componen
     StructDirHero,
     TrigonometryDirective,
     DependencyInjectionComponent,
-    CarComponent
+    CarComponent,
+    DiHeroListComponent, 
+    DiHeroesComponent,
+    DiHeroesTspComponent
     
   ],
   imports: [
