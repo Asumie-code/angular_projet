@@ -101,6 +101,10 @@ import { DiHeroListComponent } from './components/dependency-injection/heroes/he
 import { DiHeroesComponent } from './components/dependency-injection/heroes/heroes.component';
 import { DiHeroesTspComponent } from './components/dependency-injection/heroes/heroes-tsp.component';
 import { InjectorComponent } from './components/dependency-injection/injector.component';
+import { DiLogger } from './components/dependency-injection/di-logger.service';
+import { UserService } from './components/dependency-injection/user.service';
+import { APP_CONFIG, HERO_DI_CONFIG } from './components/dependency-injection/app.config';
+import { ProvidersModule } from './components/dependency-injection/providers.module';
 
 
 @NgModule({
@@ -210,12 +214,17 @@ import { InjectorComponent } from './components/dependency-injection/injector.co
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule, // need this module to use [(ngModel)] directive,
-    HttpClientModule
+    HttpClientModule,
+    ProvidersModule 
   ],
   providers: [
     AdService,
-    PopupService
+    PopupService,
+    DiLogger, 
+    UserService, 
+    {provide: APP_CONFIG, useValue: HERO_DI_CONFIG}
   ],
+  exports: [CarComponent, DiHeroesComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

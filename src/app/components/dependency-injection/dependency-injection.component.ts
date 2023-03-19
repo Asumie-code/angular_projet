@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, Inject } from "@angular/core";
 import { UserService } from "./user.service";
 
+import { APP_CONFIG, AppConfig } from "./app.config";
 
 @Component({
     selector: 'dependency-injection', 
@@ -16,15 +17,20 @@ import { UserService } from "./user.service";
         <di-heroes id="authorized" *ngIf="isAuthorized"></di-heroes>
         <di-heroes id="unauthorized" *ngIf="!isAuthorized"></di-heroes>
         <di-heroes-tsp id="tspAuthorized" *ngIf="isAuthorized"></di-heroes-tsp>
+        <di-providers></di-providers>
     `
 })
 
 export class DependencyInjectionComponent {
-    title: string = 'Dependency Injection'
+    title: string;
 
     constructor(
+        @Inject(APP_CONFIG) config: AppConfig,
         private userService: UserService
-    ) {}
+
+    ) {
+        this.title = config.title
+    }
 
 
     get isAuthorized() { return this.user.isAuthorized  }
