@@ -7,6 +7,7 @@ import { UserService } from "./user.service";
     template: `
         <h1>{{title}}</h1>
         <app-car></app-car>
+        <di-injector></di-injector>
         <h2>User</h2>
         <p id="user">
             {{userInfo}}

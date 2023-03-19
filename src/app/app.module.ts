@@ -100,6 +100,7 @@ import { CarComponent } from './components/dependency-injection/car/car.componen
 import { DiHeroListComponent } from './components/dependency-injection/heroes/hero-list.compnent';
 import { DiHeroesComponent } from './components/dependency-injection/heroes/heroes.component';
 import { DiHeroesTspComponent } from './components/dependency-injection/heroes/heroes-tsp.component';
+import { InjectorComponent } from './components/dependency-injection/injector.component';
 
 
 @NgModule({
@@ -200,7 +201,8 @@ import { DiHeroesTspComponent } from './components/dependency-injection/heroes/h
     CarComponent,
     DiHeroListComponent, 
     DiHeroesComponent,
-    DiHeroesTspComponent
+    DiHeroesTspComponent,
+    InjectorComponent
     
   ],
   imports: [
