@@ -105,6 +105,14 @@ import { DiLogger } from './components/dependency-injection/di-logger.service';
 import { UserService } from './components/dependency-injection/user.service';
 import { APP_CONFIG, HERO_DI_CONFIG } from './components/dependency-injection/app.config';
 import { ProvidersModule } from './components/dependency-injection/providers.module';
+import { HostComponent } from './components/di-resolution-modifiers/host/host.component';
+import { HostChildComponent } from './components/di-resolution-modifiers/host-child/host-child.component';
+import { HostParentComponent } from './components/di-resolution-modifiers/host-parent/host-parent.component';
+import { OptionalComponent } from './components/di-resolution-modifiers/optional/optional.component';
+import { SelfComponent } from './components/di-resolution-modifiers/self/self.component';
+import { SelfNoDataComponent } from './components/di-resolution-modifiers/self-no-data/self-no-data.component';
+import { SkipselfComponent } from './components/di-resolution-modifiers/skipself/skipself.component';
+import { DiResolutionModifiers } from './components/di-resolution-modifiers/di-resolution-modifiers.component';
 
 
 @NgModule({
@@ -206,7 +214,15 @@ import { ProvidersModule } from './components/dependency-injection/providers.mod
     DiHeroListComponent, 
     DiHeroesComponent,
     DiHeroesTspComponent,
-    InjectorComponent
+    InjectorComponent,
+    HostComponent, 
+    HostChildComponent, 
+    HostParentComponent, 
+    OptionalComponent, 
+    SelfComponent, 
+    SelfNoDataComponent, 
+    SkipselfComponent,
+    DiResolutionModifiers
     
   ],
   imports: [
