@@ -113,6 +113,9 @@ import { SelfComponent } from './components/di-resolution-modifiers/self/self.co
 import { SelfNoDataComponent } from './components/di-resolution-modifiers/self-no-data/self-no-data.component';
 import { SkipselfComponent } from './components/di-resolution-modifiers/skipself/skipself.component';
 import { DiResolutionModifiers } from './components/di-resolution-modifiers/di-resolution-modifiers.component';
+import { DiViewprovider } from './components/di-viewprovider/di-viewprovider.component';
+import { InspectorComponent } from './components/di-viewprovider/inspector/inspector.component';
+import { DiChildComponent } from './components/di-viewprovider/child/child.component';
 
 
 @NgModule({
@@ -222,7 +225,10 @@ import { DiResolutionModifiers } from './components/di-resolution-modifiers/di-r
     SelfComponent, 
     SelfNoDataComponent, 
     SkipselfComponent,
-    DiResolutionModifiers
+    DiResolutionModifiers,
+    DiViewprovider,
+    InspectorComponent,
+    DiChildComponent
     
   ],
   imports: [

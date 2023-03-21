@@ -1,0 +1,14 @@
+<p>Emoji from FlowerService: {{flower.emoji}}</p>
+<p>Emoji from AnimalService: {{animal.emoji}}</p>
+
+
+<div class="container">
+    <h3>Content Projection</h3>
+    <p>the following is coming from content. it doesn't get to see the puppy because the puppy is declared inside the view only</p>
+    <ng-content></ng-content>
+</div>
+
+
+<h3>Inside the view</h3>
+<p>the following is inside the view so it does see the puppy.</p>
+<di-inspector></di-inspector> 
