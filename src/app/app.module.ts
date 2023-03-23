@@ -116,6 +116,8 @@ import { DiResolutionModifiers } from './components/di-resolution-modifiers/di-r
 import { DiViewprovider } from './components/di-viewprovider/di-viewprovider.component';
 import { InspectorComponent } from './components/di-viewprovider/inspector/inspector.component';
 import { DiChildComponent } from './components/di-viewprovider/child/child.component';
+import { VillainsListComponent } from './components/di-element-injector/villains-list.component';
+import { DiElementInjector } from './components/di-element-injector/di-element-injector.component';
 
 
 @NgModule({
@@ -228,7 +230,10 @@ import { DiChildComponent } from './components/di-viewprovider/child/child.compo
     DiResolutionModifiers,
     DiViewprovider,
     InspectorComponent,
-    DiChildComponent
+    DiChildComponent,
+    DiElementInjector,
+    VillainsListComponent, 
+    
     
   ],
   imports: [
