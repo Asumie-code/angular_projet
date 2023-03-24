@@ -118,6 +118,7 @@ import { InspectorComponent } from './components/di-viewprovider/inspector/inspe
 import { DiChildComponent } from './components/di-viewprovider/child/child.component';
 import { VillainsListComponent } from './components/di-element-injector/villains-list.component';
 import { DiElementInjector } from './components/di-element-injector/di-element-injector.component';
+import { carComponents } from './components/di-element-injector/car.component';
 
 
 @NgModule({
@@ -233,7 +234,7 @@ import { DiElementInjector } from './components/di-element-injector/di-element-i
     DiChildComponent,
     DiElementInjector,
     VillainsListComponent, 
-    
+    carComponents
     
   ],
   imports: [

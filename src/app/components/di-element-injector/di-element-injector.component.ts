@@ -35,6 +35,7 @@ import { Component } from "@angular/core";
         <h1>Hierarchical Dependency Injection</h1>
 
         <di-villains-list  *ngIf="showVillains"></di-villains-list>
+        <di-cars  *ngIf="showCars"></di-cars>
     `
 })
 export class DiElementInjector {
