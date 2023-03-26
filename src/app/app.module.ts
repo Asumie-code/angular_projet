@@ -119,6 +119,8 @@ import { DiChildComponent } from './components/di-viewprovider/child/child.compo
 import { VillainsListComponent } from './components/di-element-injector/villains-list.component';
 import { DiElementInjector } from './components/di-element-injector/di-element-injector.component';
 import { carComponents } from './components/di-element-injector/car.component';
+import { HeroTaxReturnComponent } from './components/di-element-injector/hero-tax-return.component';
+import { DiHeroesListComponent } from './components/di-element-injector/heroes-list.component';
 
 
 @NgModule({
@@ -234,7 +236,9 @@ import { carComponents } from './components/di-element-injector/car.component';
     DiChildComponent,
     DiElementInjector,
     VillainsListComponent, 
-    carComponents
+    carComponents, 
+    HeroTaxReturnComponent,
+    DiHeroesListComponent
     
   ],
   imports: [

@@ -36,6 +36,7 @@ import { Component } from "@angular/core";
 
         <di-villains-list  *ngIf="showVillains"></di-villains-list>
         <di-cars  *ngIf="showCars"></di-cars>
+        <di-heroes-list></di-heroes-list>
     `
 })
 export class DiElementInjector {
