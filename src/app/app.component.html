@@ -1,3 +1,4 @@
-<p>
-    working
-</p>
+<div *ngFor="let value of sequence">
+    <p>{{value}}</p>
+</div>
+<button (click)="this.getSequence()">start</button>

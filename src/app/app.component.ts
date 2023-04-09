@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { DelayedSquenceService } from './delayed-sequence.service';
 
 
 @Component({
@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    sequence: number[] = []
 
+    constructor(public delayedSequence: DelayedSquenceService) {}
+
+    getSequence() {
+      this.delayedSequence.getDelayedSquence().subscribe((value) => {
+        this.sequence.push(value)
+      })
+    }
+    
 }
