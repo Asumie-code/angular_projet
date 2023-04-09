@@ -5,9 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 
 
-// feature modules
-import { GreetingModule } from './greeting/greeting.module';
-import { ContactModule } from './contact/contact.module';
 
 // routing module
 import { AppRoutingModule } from './app-routing.module';
@@ -26,8 +23,6 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     FormsModule, // need this module to use [(ngModel)] directive,
     HttpClientModule,
-    GreetingModule.forRoot({userName: 'Miss Marple'}),
-    ContactModule
   ],
   providers: [
   ],
