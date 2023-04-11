@@ -2,3 +2,7 @@
     <p>{{value}}</p>
 </div>
 <button (click)="this.getSequence()">start</button>
+<div *ngFor="let value of squaredNums">
+    <p>{{value}}</p>
+</div>
+<button (click)="this.getSquaredNums()">get squared odd values</button>
