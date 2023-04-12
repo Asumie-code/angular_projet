@@ -10,11 +10,15 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
+import { HeroBioComponent } from './hero-bio.component';
+import { HeroBiosComponent } from './hero-bios.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeroBioComponent,
+    HeroBiosComponent
 
   ],
   imports: [
