@@ -10,6 +10,7 @@ import { UserContextService } from './user-context.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    title = 'my-app'
     private userId = 1
 
     constructor(logger: LoggerService, public userContext: UserContextService) {

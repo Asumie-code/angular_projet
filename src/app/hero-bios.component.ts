@@ -20,3 +20,19 @@ export class HeroBiosComponent {
         logger.logInfo('creating HeroBiosComponent')
     }
 }
+
+// HeroBiosAndContactsComponent
+@Component({
+    selector: 'app-hero-bios-and-contacts', 
+    template: `
+            <app-hero-bio [heroId]="1"> <app-hero-contact></app-hero-contact> </app-hero-bio>
+            <app-hero-bio [heroId]="2"> <app-hero-contact></app-hero-contact> </app-hero-bio>
+            <app-hero-bio [heroId]="3"> <app-hero-contact></app-hero-contact> </app-hero-bio>
+    `,
+    providers: [ HeroService ]
+})
+export class HeroBiosAndContactsComponent {
+    constructor(logger: LoggerService) {
+        logger.logInfo('creating HeroBiosAndContactsComponent')
+    }
+}

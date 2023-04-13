@@ -11,14 +11,19 @@ import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
 import { HeroBioComponent } from './hero-bio.component';
-import { HeroBiosComponent } from './hero-bios.component';
+import { HeroBiosAndContactsComponent, HeroBiosComponent } from './hero-bios.component';
+import { HeroContactComponent } from './hero-contact.component';
+import { StorageComponent } from './storage.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroBioComponent,
-    HeroBiosComponent
+    HeroBiosComponent,
+    HeroContactComponent,
+    HeroBiosAndContactsComponent,
+    StorageComponent
 
   ],
   imports: [
