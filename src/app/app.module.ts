@@ -14,6 +14,9 @@ import { HeroBioComponent } from './hero-bio.component';
 import { HeroBiosAndContactsComponent, HeroBiosComponent } from './hero-bios.component';
 import { HeroContactComponent } from './hero-contact.component';
 import { StorageComponent } from './storage.component';
+import { HighlightDirective } from './highlight.directive';
+import { HeroOfTheMonthComponent } from './hero-of-the-month.component';
+import { HeroesBaseComponent, SortedHeroesComponent } from './sorted-heroes.component';
 
 
 @NgModule({
@@ -23,7 +26,11 @@ import { StorageComponent } from './storage.component';
     HeroBiosComponent,
     HeroContactComponent,
     HeroBiosAndContactsComponent,
-    StorageComponent
+    StorageComponent,
+    HighlightDirective,
+    HeroOfTheMonthComponent,
+    HeroesBaseComponent, 
+    SortedHeroesComponent
 
   ],
   imports: [
