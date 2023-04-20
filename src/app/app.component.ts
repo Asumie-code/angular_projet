@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { LoggerService } from './logger.service';
-import { UserContextService } from './user-context.service';
+
 
 
 @Component({
@@ -10,11 +9,5 @@ import { UserContextService } from './user-context.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'my-app'
-    private userId = 1
 
-    constructor(logger: LoggerService, public userContext: UserContextService) {
-      userContext.loadUser(this.userId)
-      logger.logInfo('AppComponent initialized')
-    }
 }
