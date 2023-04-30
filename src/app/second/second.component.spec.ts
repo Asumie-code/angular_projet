@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TopLevelSlComponent } from './top-level-sl.component';
+import { SecondComponent } from './second.component';
 
-describe('TopLevelSlComponent', () => {
-  let component: TopLevelSlComponent;
-  let fixture: ComponentFixture<TopLevelSlComponent>;
+describe('SecondComponent', () => {
+  let component: SecondComponent;
+  let fixture: ComponentFixture<SecondComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ TopLevelSlComponent ]
+      declarations: [ SecondComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TopLevelSlComponent);
+    fixture = TestBed.createComponent(SecondComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

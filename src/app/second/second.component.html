@@ -1,0 +1,16 @@
+<p>second works!</p>
+
+
+<nav>
+    <ul>
+        <li><a routerLink="child-a">Child A</a></li>
+        <li><a routerLink="child-b">Child b</a></li>
+        <li><a routerLink="../first-component">first component</a></li>
+    </ul>
+    <div (mouseenter)="goToRandom()">
+        hover here to navigate to different location 
+    </div>
+</nav>
+
+
+<router-outlet></router-outlet>
