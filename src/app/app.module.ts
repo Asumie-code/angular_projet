@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -17,6 +20,9 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CrisisListComponent,
+    HeroesListComponent,
+    PageNotFoundComponent,
 
 
 
