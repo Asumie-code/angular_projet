@@ -10,22 +10,14 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
-import { ChildAComponent } from './child-a/child-a.component';
-import { ChildBComponent } from './child-b/child-b.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
-    SecondComponent,
-    NotFoundPageComponent,
-    ChildAComponent,
-    ChildBComponent,
+
 
 
   ],
