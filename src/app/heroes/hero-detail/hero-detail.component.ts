@@ -28,7 +28,8 @@ export class HeroDetailComponent implements OnInit{
   }
 
   gotoHeroes(hero: Hero) {
-
+        const heroId = hero? hero.id : null // use this to select the hero that was navigated to previously 
+        this.router.navigate(['/superheroes', {id: heroId, foo: 'foo'}]) // route to navigate to and navigation extras
   }
 
 }
