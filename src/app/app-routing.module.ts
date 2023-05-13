@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, UrlSegment } from '@angular/router';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 
 
 const routes: Routes = [
-      {path: 'crisis-list', component: CrisisListComponent},
-
-      {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
+     { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
+     {
+      path: 'compose',
+      component: ComposeMessageComponent,
+      outlet: 'popup'
+    },
       {
         matcher: (url) => {
           if (url.length === 1 && url[0].path.match(/^@[\w]+$/gm)) {

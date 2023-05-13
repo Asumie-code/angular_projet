@@ -11,11 +11,12 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { crisesModule } from './crisis-center/crisis-center.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 
 
@@ -23,10 +24,11 @@ import { HeroesModule } from './heroes/heroes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    CrisisListComponent,
+
 
     PageNotFoundComponent,
     ProfileComponent,
+    ComposeMessageComponent,
 
 
 
@@ -37,6 +39,7 @@ import { HeroesModule } from './heroes/heroes.module';
     FormsModule, // need this module to use [(ngModel)] directive,
     HttpClientModule,
     HeroesModule,
+    crisesModule,
     AppRoutingModule,
 
   ],
