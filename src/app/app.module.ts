@@ -19,6 +19,7 @@ import { crisesModule } from './crisis-center/crisis-center.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module'; 
+import { Router } from '@angular/router';
 
 
 
@@ -43,7 +44,6 @@ import { AuthModule } from './auth/auth.module';
     FormsModule, // need this module to use [(ngModel)] directive,
     HttpClientModule,
     HeroesModule,
-    crisesModule,
     AdminModule,
     AuthModule,
     AppRoutingModule,
@@ -54,4 +54,11 @@ import { AuthModule } from './auth/auth.module';
   exports: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(router: Router) {
+    // use a custom replacer to display function names in the route configs
+    const replacer = (key: any, value: any) => (typeof value === 'function') ? value.name : value
+
+    console.log('Routes: ', JSON.stringify(router.config, replacer, 2));
+  }
+}
