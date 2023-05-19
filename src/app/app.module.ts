@@ -12,13 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 // app root 
 import { AppComponent } from './app.component';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProfileComponent } from './profile/profile.component';
-import { HeroesModule } from './heroes/heroes.module';
-import { crisesModule } from './crisis-center/crisis-center.module';
-import { ComposeMessageComponent } from './compose-message/compose-message.component';
-import { AdminModule } from './admin/admin.module';
-import { AuthModule } from './auth/auth.module'; 
+
 import { Router } from '@angular/router';
 
 
@@ -29,23 +23,12 @@ import { Router } from '@angular/router';
   declarations: [
     AppComponent,
 
-
-    PageNotFoundComponent,
-    ProfileComponent,
-    ComposeMessageComponent,
-
-
-
-
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule, // need this module to use [(ngModel)] directive,
     HttpClientModule,
-    HeroesModule,
-    AdminModule,
-    AuthModule,
     AppRoutingModule,
 
   ],
