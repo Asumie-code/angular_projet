@@ -14,8 +14,7 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
-import { NameEditorComponent } from './name-editor/name-editor.component';
-import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+
 
 
 
@@ -24,8 +23,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
 @NgModule({
   declarations: [
     AppComponent,
-    NameEditorComponent,
-    ProfileEditorComponent,
+
 
   ],
   imports: [
