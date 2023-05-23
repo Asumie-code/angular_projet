@@ -14,6 +14,10 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
+import { HeroFormTemplateComponent } from './template/hero-form-template.component';
+import { ForbiddenValidatorDirective } from './shared/foridden-name.directive';
+import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.directive';
+import { HeroFormReactiveComponent } from './reactive/hero-form-reactive.component';
 
 
 
@@ -23,6 +27,10 @@ import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
+    HeroFormTemplateComponent,
+    ForbiddenValidatorDirective,
+    IdentityRevealedValidatorDirective,
+    HeroFormReactiveComponent
 
 
   ],
