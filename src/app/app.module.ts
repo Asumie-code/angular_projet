@@ -14,6 +14,8 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
+import { DynamicFormComponent } from './dynamic-form.component';
+import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
 
 
 
@@ -23,7 +25,8 @@ import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-
+    DynamicFormComponent, 
+    DynamicFormQuestionComponent
 
 
   ],
