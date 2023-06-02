@@ -14,6 +14,9 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { ConfigComponent } from './config/config.component';
 
 
 
@@ -24,7 +27,7 @@ import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-
+    ConfigComponent
 
 
   ],
@@ -34,6 +37,14 @@ import { Router } from '@angular/router';
     FormsModule, // need this module to use [(ngModel)] directive,
     ReactiveFormsModule,
     HttpClientModule,
+
+    // the HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses 
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false, 
+      passThruUnknownUrl: true, 
+      put204: false // return entity after PUT/update
+    }),
     AppRoutingModule,
 
   ],
