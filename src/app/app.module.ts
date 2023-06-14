@@ -17,6 +17,7 @@ import { Router } from '@angular/router';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { ConfigComponent } from './config/config.component';
+import { DownloaderComponent } from './downloader/downloader.component';
 
 
 
@@ -27,7 +28,8 @@ import { ConfigComponent } from './config/config.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ConfigComponent
+    ConfigComponent,
+    DownloaderComponent
 
 
   ],
