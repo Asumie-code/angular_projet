@@ -40,4 +40,8 @@ export class ConfigComponent {
   getType(val: any): string {
     return val instanceof Date ? 'date' : Array.isArray(val) ? 'array' : typeof val;
   }
+
+  makeError() {
+    this.configService.makeIntentionalError().subscribe({error: error => this.error = error.message})
+  }
 }
