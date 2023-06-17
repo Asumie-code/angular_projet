@@ -21,6 +21,7 @@ import { DownloaderComponent } from './downloader/downloader.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessageService } from './message.service';
 import { HttpErrorHandler } from './http-error-handler.service';
+import { httpInterceptorProviders } from './http-interceptors';
 
 
 
@@ -56,7 +57,8 @@ import { HttpErrorHandler } from './http-error-handler.service';
   ],
   providers: [
     MessageService,
-    HttpErrorHandler
+    HttpErrorHandler, 
+    httpInterceptorProviders
   ],
   exports: [],
   bootstrap: [AppComponent],
