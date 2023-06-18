@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http'
 
 
 
@@ -22,6 +22,12 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { MessageService } from './message.service';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { httpInterceptorProviders } from './http-interceptors';
+import { AuthService } from './auth.service';
+import { MessagesComponent } from './messages/messages.component';
+import { PackageSearchComponent } from './package-search/package-search.component';
+import { RequestCache, RequestCacheWithMap } from './request-cache.service';
+import { UploaderComponent } from './uploader/uploader.component';
+
 
 
 
@@ -34,12 +40,19 @@ import { httpInterceptorProviders } from './http-interceptors';
     AppComponent,
     ConfigComponent,
     DownloaderComponent, 
-    HeroesComponent
+    HeroesComponent,
+    MessagesComponent,
+    PackageSearchComponent,
+    UploaderComponent
 
 
   ],
   imports: [
     BrowserModule,
+    HttpClientXsrfModule.withOptions({
+      cookieName: 'My-Xsrf-Cookie', 
+      headerName: 'My-Xsrf-Header'
+    }),
     BrowserAnimationsModule,
     FormsModule, // need this module to use [(ngModel)] directive,
     ReactiveFormsModule,
@@ -57,8 +70,10 @@ import { httpInterceptorProviders } from './http-interceptors';
   ],
   providers: [
     MessageService,
+    AuthService, 
     HttpErrorHandler, 
-    httpInterceptorProviders
+    { provide: RequestCache, useClass: RequestCacheWithMap },
+    httpInterceptorProviders,
   ],
   exports: [],
   bootstrap: [AppComponent],
