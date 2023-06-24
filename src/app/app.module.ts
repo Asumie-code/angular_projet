@@ -14,19 +14,8 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
-import { ConfigComponent } from './config/config.component';
-import { DownloaderComponent } from './downloader/downloader.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { MessageService } from './message.service';
-import { HttpErrorHandler } from './http-error-handler.service';
-import { httpInterceptorProviders } from './http-interceptors';
-import { AuthService } from './auth.service';
-import { MessagesComponent } from './messages/messages.component';
-import { PackageSearchComponent } from './package-search/package-search.component';
-import { RequestCache, RequestCacheWithMap } from './request-cache.service';
-import { UploaderComponent } from './uploader/uploader.component';
+
+
 
 
 
@@ -38,12 +27,7 @@ import { UploaderComponent } from './uploader/uploader.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ConfigComponent,
-    DownloaderComponent, 
-    HeroesComponent,
-    MessagesComponent,
-    PackageSearchComponent,
-    UploaderComponent
+
 
 
   ],
@@ -58,22 +42,12 @@ import { UploaderComponent } from './uploader/uploader.component';
     ReactiveFormsModule,
     HttpClientModule,
 
-    // the HttpClientInMemoryWebApiModule module intercepts HTTP requests
-    // and returns simulated server responses 
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false, 
-      passThruUnknownUrl: true, 
-      put204: false // return entity after PUT/update
-    }),
+
     AppRoutingModule,
 
   ],
   providers: [
-    MessageService,
-    AuthService, 
-    HttpErrorHandler, 
-    { provide: RequestCache, useClass: RequestCacheWithMap },
-    httpInterceptorProviders,
+
   ],
   exports: [],
   bootstrap: [AppComponent],
