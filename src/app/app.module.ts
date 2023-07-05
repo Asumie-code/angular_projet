@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 
 
 import { Router } from '@angular/router';
+import { OpenCloseComponent } from './open-close/open-close.component';
 
 
 
@@ -27,6 +28,7 @@ import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
+    OpenCloseComponent,
 
 
 
