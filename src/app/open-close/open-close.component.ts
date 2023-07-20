@@ -17,13 +17,14 @@ import { Component } from '@angular/core';
         opacity: 0.8, 
         backgroundColor: 'blue'
       })),
+      
       transition('open => closed', [ animate('1s')]),
       transition('closed => open', [ animate('0.5s')]),
-      transition(' * => closed', [ animate('1s')]),
-      transition(' * => open', [ animate('0.5s')]),
-      transition(' open <=> closed', [ animate('0.5s')]),
-      transition('* => open', [ animate('1s', style({ opactiy: '*' }))]), 
-      transition('* => *', [ animate('1s')])
+      // transition(' * => closed', [ animate('1s')]),
+      // transition(' * => open', [ animate('0.5s')]),
+      // transition(' open <=> closed', [ animate('0.5s')]),
+      // transition('* => open', [ animate('1s', style({ opactiy: '*' }))]), 
+      // transition('* => *', [ animate('1s')])
     ])
   ]
 })

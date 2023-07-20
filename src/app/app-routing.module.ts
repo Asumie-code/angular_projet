@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import {  RouterModule, Routes } from '@angular/router';
-import { OpenCloseComponent } from './open-close/open-close.component';
+import { HeroListEnterLeavePageComponent } from './hero-list/hero-list-enter-leave-page.component';
+import { OpenClosePageComponent } from './open-close/open-close-page.component';
 
 
 
 const routes: Routes = [
-  {path:'open-close', component: OpenCloseComponent }
+  { path: '', pathMatch: 'full', redirectTo: '/enter-leave' },
+  {path:'open-close', component: OpenClosePageComponent }, 
+  {path: 'enter-leave', component: HeroListEnterLeavePageComponent}
 
 ];
 

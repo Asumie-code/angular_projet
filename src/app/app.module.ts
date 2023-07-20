@@ -15,6 +15,9 @@ import { AppComponent } from './app.component';
 
 import { Router } from '@angular/router';
 import { OpenCloseComponent } from './open-close/open-close.component';
+import { HeroListEnterLeaveComponent } from './hero-list/hero-list-enter-leave.component';
+import { HeroListEnterLeavePageComponent } from './hero-list/hero-list-enter-leave-page.component';
+import { OpenClosePageComponent } from './open-close/open-close-page.component';
 
 
 
@@ -29,6 +32,9 @@ import { OpenCloseComponent } from './open-close/open-close.component';
   declarations: [
     AppComponent,
     OpenCloseComponent,
+    HeroListEnterLeaveComponent,
+    HeroListEnterLeavePageComponent,
+    OpenClosePageComponent
 
 
 
