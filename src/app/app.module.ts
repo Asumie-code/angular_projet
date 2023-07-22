@@ -18,6 +18,8 @@ import { OpenCloseComponent } from './open-close/open-close.component';
 import { HeroListEnterLeaveComponent } from './hero-list/hero-list-enter-leave.component';
 import { HeroListEnterLeavePageComponent } from './hero-list/hero-list-enter-leave-page.component';
 import { OpenClosePageComponent } from './open-close/open-close-page.component';
+import { InsertRemoveComponent } from './insert-remove/insert-remove.component';
+import { HeroListPageComponent } from './hero-list-page/hero-list-page.component';
 
 
 
@@ -34,7 +36,9 @@ import { OpenClosePageComponent } from './open-close/open-close-page.component';
     OpenCloseComponent,
     HeroListEnterLeaveComponent,
     HeroListEnterLeavePageComponent,
-    OpenClosePageComponent
+    OpenClosePageComponent,
+    InsertRemoveComponent,
+    HeroListPageComponent
 
 
 
