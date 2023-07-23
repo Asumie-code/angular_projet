@@ -1,5 +1,5 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { animate, state, style, transition, trigger, AnimationEvent } from '@angular/animations';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-open-close',
@@ -29,9 +29,34 @@ import { Component } from '@angular/core';
   ]
 })
 export class OpenCloseComponent {
+
+  @Input() logging = false
   isOpen = true 
 
   toggle() {
     this.isOpen = !this.isOpen
+  }
+
+  onAnimationEvent(event: AnimationEvent) {
+    if (!this.logging) {
+      return;
+    }
+    // openClose is trigger name in this example
+    console.warn(`Animation Trigger: ${event.triggerName}`);
+
+    // phaseName is "start" or "done"
+    console.warn(`Phase: ${event.phaseName}`);
+
+    // in our example, totalTime is 1000 (number of milliseconds in a second)
+    console.warn(`Total time: ${event.totalTime}`);
+
+    // in our example, fromState is either "open" or "closed"
+    console.warn(`From: ${event.fromState}`);
+
+    // in our example, toState either "open" or "closed"
+    console.warn(`To: ${event.toState}`);
+
+    // the HTML element itself, the button in this case
+    console.warn(`Element: ${event.element}`);
   }
 }

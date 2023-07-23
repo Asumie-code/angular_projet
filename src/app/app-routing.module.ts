@@ -4,6 +4,9 @@ import { HeroListEnterLeavePageComponent } from './hero-list/hero-list-enter-lea
 import { OpenClosePageComponent } from './open-close/open-close-page.component';
 import { InsertRemoveComponent } from './insert-remove/insert-remove.component';
 import { HeroListPageComponent } from './hero-list-page/hero-list-page.component';
+import { ToggleAnimationsPageComponent } from './toggle-animations/open-close/toggle-animations-page.component';
+import { HomeComponent } from './home.component';
+import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
 
 
 
@@ -12,7 +15,10 @@ const routes: Routes = [
   {path:'open-close', component: OpenClosePageComponent }, 
   {path: 'enter-leave', component: HeroListEnterLeavePageComponent}, 
   {path: 'insert-remove', component: InsertRemoveComponent}, 
-  {path: 'heroes', component: HeroListPageComponent}
+  {path: 'heroes', component: HeroListPageComponent},
+  {path: 'toggle', component: ToggleAnimationsPageComponent},
+  {path:'home', component: HomeComponent},
+  {path:'status', component: StatusSliderPageComponent},
 
 ];
 

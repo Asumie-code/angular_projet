@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 
 
@@ -11,6 +11,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'some title'
+  @HostBinding('@.disabled')
+  public animationsDisabled = false
+
+
+  toggleAnimations() {
+    this.animationsDisabled = !this.animationsDisabled
+  }
 
 
 }

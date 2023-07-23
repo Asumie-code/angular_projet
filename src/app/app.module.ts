@@ -20,6 +20,11 @@ import { HeroListEnterLeavePageComponent } from './hero-list/hero-list-enter-lea
 import { OpenClosePageComponent } from './open-close/open-close-page.component';
 import { InsertRemoveComponent } from './insert-remove/insert-remove.component';
 import { HeroListPageComponent } from './hero-list-page/hero-list-page.component';
+import { ToggleAnimationsPageComponent } from './toggle-animations/open-close/toggle-animations-page.component';
+import { OpenCloseToggleComponent } from './toggle-animations/open-close/open-close.component';
+import { HomeComponent } from './home.component';
+import { StatusSliderComponent } from './status-slider/status-slider.component';
+import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
 
 
 
@@ -38,7 +43,12 @@ import { HeroListPageComponent } from './hero-list-page/hero-list-page.component
     HeroListEnterLeavePageComponent,
     OpenClosePageComponent,
     InsertRemoveComponent,
-    HeroListPageComponent
+    HeroListPageComponent,
+    OpenCloseToggleComponent, 
+    ToggleAnimationsPageComponent,
+    HomeComponent,
+    StatusSliderComponent, 
+    StatusSliderPageComponent
 
 
 
