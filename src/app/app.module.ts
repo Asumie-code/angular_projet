@@ -25,6 +25,8 @@ import { OpenCloseToggleComponent } from './toggle-animations/open-close/open-cl
 import { HomeComponent } from './home.component';
 import { StatusSliderComponent } from './status-slider/status-slider.component';
 import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
+import { HeroListAutoComponent } from './hero-list-auto/hero-list-auto.component';
+import { HeroListAutoCalcPageComponent } from './hero-list-auto/hero-list-auto-page.component';
 
 
 
@@ -48,7 +50,9 @@ import { StatusSliderPageComponent } from './status-slider/status-slider-page.co
     ToggleAnimationsPageComponent,
     HomeComponent,
     StatusSliderComponent, 
-    StatusSliderPageComponent
+    StatusSliderPageComponent, 
+    HeroListAutoComponent,
+    HeroListAutoCalcPageComponent
 
 
 

@@ -7,6 +7,7 @@ import { HeroListPageComponent } from './hero-list-page/hero-list-page.component
 import { ToggleAnimationsPageComponent } from './toggle-animations/open-close/toggle-animations-page.component';
 import { HomeComponent } from './home.component';
 import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
+import { HeroListAutoCalcPageComponent } from './hero-list-auto/hero-list-auto-page.component';
 
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'toggle', component: ToggleAnimationsPageComponent},
   {path:'home', component: HomeComponent},
   {path:'status', component: StatusSliderPageComponent},
+  {path:'auto', component: HeroListAutoCalcPageComponent}
 
 ];
 
