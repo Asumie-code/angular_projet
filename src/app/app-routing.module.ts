@@ -8,19 +8,58 @@ import { ToggleAnimationsPageComponent } from './toggle-animations/open-close/to
 import { HomeComponent } from './home.component';
 import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
 import { HeroListAutoCalcPageComponent } from './hero-list-auto/hero-list-auto-page.component';
+import { HeroListGroupPageComponent } from './hero-list-groups/hero-list-groups-page.component';
 
 
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/enter-leave' },
-  {path:'open-close', component: OpenClosePageComponent }, 
-  {path: 'enter-leave', component: HeroListEnterLeavePageComponent}, 
-  {path: 'insert-remove', component: InsertRemoveComponent}, 
-  {path: 'heroes', component: HeroListPageComponent},
-  {path: 'toggle', component: ToggleAnimationsPageComponent},
-  {path:'home', component: HomeComponent},
-  {path:'status', component: StatusSliderPageComponent},
-  {path:'auto', component: HeroListAutoCalcPageComponent}
+  {
+    path: 'open-close',
+    component: OpenClosePageComponent,
+    data: { animation: 'openClosePage' }
+  },
+  {
+    path: 'status',
+    component: StatusSliderPageComponent,
+    data: { animation: 'statusPage' }
+  },
+  {
+    path: 'toggle',
+    component: ToggleAnimationsPageComponent,
+    data: { animation: 'togglePage' }
+  },
+  {
+    path: 'heroes',
+    component: HeroListPageComponent,
+    data: { animation: 'filterPage' }
+  },
+  {
+    path: 'hero-groups',
+    component: HeroListGroupPageComponent,
+    data: { animation: 'heroGroupPage' }
+  },
+  {
+    path: 'enter-leave',
+    component: HeroListEnterLeavePageComponent,
+    data: { animation: 'enterLeavePage' }
+  },
+  {
+    path: 'auto',
+    component: HeroListAutoCalcPageComponent,
+    data: { animation: 'autoPage' }
+  },
+  {
+    path: 'insert-remove',
+    component: InsertRemoveComponent,
+    data: { animation: 'insertRemovePage' }
+  },
+
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { animation: 'HomePage' }
+  },
 
 ];
 

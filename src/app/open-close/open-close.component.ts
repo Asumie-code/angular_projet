@@ -1,5 +1,6 @@
-import { animate, state, style, transition, trigger, AnimationEvent, keyframes } from '@angular/animations';
+import { animate, state, style, transition, trigger, AnimationEvent, keyframes, useAnimation } from '@angular/animations';
 import { Component, Input } from '@angular/core';
+import { transitionAnimation } from '../animations';
 
 @Component({
   selector: 'app-open-close',
@@ -18,7 +19,17 @@ import { Component, Input } from '@angular/core';
         backgroundColor: 'blue'
       })),
       
-      transition('open => closed', [ animate('1s')]),
+      // transition('open => closed', [ animate('1s')]),
+      transition('open => closed', [
+        useAnimation(transitionAnimation, {
+          params: {
+            height: 0, 
+            opacity: 1, 
+            backgroundColor: 'red', 
+            time: '1s'
+          }
+        })
+      ]),
       transition('closed => open', [ animate('0.5s')]),
       // transition(' * => closed', [ animate('1s')]),
       // transition(' * => open', [ animate('0.5s')]),

@@ -27,6 +27,8 @@ import { StatusSliderComponent } from './status-slider/status-slider.component';
 import { StatusSliderPageComponent } from './status-slider/status-slider-page.component';
 import { HeroListAutoComponent } from './hero-list-auto/hero-list-auto.component';
 import { HeroListAutoCalcPageComponent } from './hero-list-auto/hero-list-auto-page.component';
+import { HeroListGroupsComponent } from './hero-list-groups/hero-list-groups.component';
+import { HeroListGroupPageComponent } from './hero-list-groups/hero-list-groups-page.component';
 
 
 
@@ -52,7 +54,9 @@ import { HeroListAutoCalcPageComponent } from './hero-list-auto/hero-list-auto-p
     StatusSliderComponent, 
     StatusSliderPageComponent, 
     HeroListAutoComponent,
-    HeroListAutoCalcPageComponent
+    HeroListAutoCalcPageComponent,
+    HeroListGroupsComponent, 
+    HeroListGroupPageComponent
 
 
 

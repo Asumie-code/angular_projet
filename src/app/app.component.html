@@ -16,9 +16,10 @@
     <a id="toggle" routerLink="/toggle" routerLinkActive="active" ariaCurrentWhenActive="page">Toggle Animations</a>
     <a id="status" routerLink="/status" routerLinkActive="active" ariaCurrentWhenActive="page">Status Slider</a>
     <a id="auto" routerLink="/auto" routerLinkActive="active" ariaCurrentWhenActive="page">Auto Calculation</a>
+    <a id="hero-groups" routerLink="/hero-groups" routerLinkActive="active" ariaCurrentWhenActive="page">Hero Groups</a>
 </nav>
 
 
-<div>
-    <router-outlet></router-outlet>
+<div [@routeAnimations]="getRouteAnimationData()">
+    <router-outlet ></router-outlet>
 </div>
